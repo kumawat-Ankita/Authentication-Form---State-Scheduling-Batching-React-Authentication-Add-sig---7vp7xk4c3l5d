@@ -9,7 +9,7 @@ function Store() {
     if (localStorage.getItem('loginStatus') !== 'true') {
       router.push('/login');
     }
-  }, []);
+  }, [router]);
 
   const handleLogout = () => {
     localStorage.setItem('loginStatus', 'false');
